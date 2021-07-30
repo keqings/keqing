@@ -6,7 +6,7 @@ client = commands.Bot(command_prefix = '각청 ')
 
 @client.command()
 async def 안녕(ctx):
-    await ctx.send('안녕 ')
+    await ctx.send('안녕 여행자')
     
 @client.event
 async def on_ready():
