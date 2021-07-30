@@ -2,8 +2,12 @@ import discord
 from discord.ext import commands
 import os
 
-client = commands.Bot(command_prefix = '-')
+client = commands.Bot(command_prefix = '각청 ')
 
+@client.command()
+async def 안녕(ctx):
+    await ctx.send('안녕 ')
+    
 @client.event
 async def on_ready():
 
