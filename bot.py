@@ -13,6 +13,8 @@ async def on_ready():
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="노래 듣는중"))
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="영상 시청중"))
   
+  print("봇 이름:",client.user.name,"봇 아이디:",client.user.id,"봇 버전:",discord.__version__)
+
 client = commands.Bot(command_prefix = '청아 ')
 
 @client.command()
@@ -42,8 +44,4 @@ async def 롤패치노트(ctx):
 async def 원신나무위키(ctx):
     await ctx.send('https://namu.wiki/w/%EC%9B%90%EC%8B%A0')   
                           
-
-  print("봇 이름:",client.user.name,"봇 아이디:",client.user.id,"봇 버전:",discord.__version__)
-
-
 client.run(os.environ['token'])
