@@ -7,10 +7,18 @@ client = commands.Bot(command_prefix = '청아 ')
 @client.command()
 async def 안녕(ctx):
     await ctx.send('안녕여행자')
-    
+
 @client.command()
-async def 원신유튜브(ctx):
+async def 도움말(ctx):
+    await ctx.send('청아 뒤에 입력하세요')
+    await ctx.send('원신:유튜브  지도:티바트맵')
+@client.command()
+async def 원신(ctx):
     await ctx.send('https://www.youtube.com/channel/UCcum1rCJ5GJeQ_xv0xrohqg')
+
+@client.command()
+async def 지도(ctx):
+    await ctx.send('https://webstatic-sea.mihoyo.com/app/ys-map-sea/index.html?lang=ko-kr#/map/2?shown_types=5,194&center=82.00,-1169.00&zoom=-2.00')
     
 @client.event
 async def on_ready():
