@@ -2,11 +2,15 @@ import discord
 from discord.ext import commands
 import os
 
-client = commands.Bot(command_prefix = '각청 ')
+client = commands.Bot(command_prefix = '청아 ')
 
 @client.command()
 async def 안녕(ctx):
-    await ctx.send('안녕 여행자')
+    await ctx.send('안녕여행자')
+    
+@client.command()
+async def 원신유튜브(ctx):
+    await ctx.send('https://www.youtube.com/channel/UCcum1rCJ5GJeQ_xv0xrohqg')
     
 @client.event
 async def on_ready():
