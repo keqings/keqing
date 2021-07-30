@@ -1,1 +1,1 @@
-worker: python keqing.py
+worker: python bot.py
