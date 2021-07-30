@@ -8,7 +8,7 @@ client = commands.Bot(command_prefix = '청아 ')
 async def 안녕(ctx):
     await ctx.send('안녕여행자')
 
-@bot.command()
+@.command()
 async def 도움말(ctx) :
     embed = discord.Embed(title = "도움말",
     description = "리월칠성 청이 사용하는 방법입니다. **청아 안녕**\청이랑 인사할 수 있습니다.\n\n**청아 원신**\원신 공식 유튜브입니다.\n\n**청아 지도**\n티바트 지역 전체 맵을 볼 수 있습니다.", color = 0x62c1cc)
