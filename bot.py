@@ -14,7 +14,7 @@ async def 도움말(ctx) :
    embed.set_author(name="각청", icon_url="https://pbs.twimg.com/profile_images/1325830385326907394/qBBNn2Zd_400x400.jpg")
    embed.add_field(name="안녕", value="청이랑 인사할 수 있습니다.", inline=False)
    
-   \embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
+   embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
    embed.add_field(name="지도", value="티바트 모든 맵을 볼 수 있습니다.", inline=True)
    embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=False)
    embed.add_field(name="무기", value="원신에 나오는 모든 무기를 찾아볼 수 있습니다.", inline=True)
