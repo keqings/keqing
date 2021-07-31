@@ -27,6 +27,10 @@ async def 지도(ctx):
 @client.command()
 async def 롤패치노트(ctx):
     await ctx.send('https://kr.leagueoflegends.com/ko-kr/news/tags/patch-notes')   
+
+@client.command()
+async def 원신나무위키(ctx):
+    await ctx.send('https://namu.wiki/w/%EC%9B%90%EC%8B%A0')
     
 @client.event
 async def on_ready():
