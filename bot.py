@@ -14,15 +14,15 @@ async def 도움말(ctx) :
    embed.set_author(name="각청", icon_url="https://pbs.twimg.com/profile_images/1325830385326907394/qBBNn2Zd_400x400.jpg")
    embed.add_field(name="안녕", value="청이랑 인사할 수 있습니다.", inline=False)
    
-   embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
+   \embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
    embed.add_field(name="지도", value="티바트 모든 맵을 볼 수 있습니다.", inline=True)
    embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=False)
    embed.add_field(name="무기", value="원신에 나오는 모든 무기를 찾아볼 수 있습니다.", inline=True)
-   
    embed.add_field(name="롤패치노트", value="롤 패치노트를 볼 수 있습니다.", inline=False)
+   embed.add_field(name="오피지지", value="롤 전적검색 사이트로 갑니다!", inline=True)
    embed.add_field(name="유튜브", value="유튜브로 바로 갑니다!", inline=True)
    
-   embed.set_footer(text="추가하고 싶은 내용을 적어주세요.")
+   embed.set_footer(text="추가하고 싶은 내용을 말해주세요.")
    await ctx.send(embed=embed)
 
 @client.command()
@@ -48,6 +48,10 @@ async def 롤패치노트(ctx):
 @client.command()
 async def 유튜브(ctx):
     await ctx.send('https://www.youtube.com/')
+
+@client.command()
+async def 오피지지(ctx):
+    await ctx.send('https://www.op.gg/l=ko_KR')
     
 @client.event
 async def on_ready():
