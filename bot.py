@@ -1,49 +1,8 @@
 import discord
-import youtube_dl
 from discord.ext import commands
 import os
 
 client = commands.Bot(command_prefix = '청아 ')
-
-@client.command()
-async def 재생(ctx, url):
-    channel = ctx.author.voice.channel
-    if bot.voice_clients == []:
-    	await channel.connect()
-    	await ctx.send("connected to the voice channel, " + str(bot.voice_clients[0].channel))
-
-    ydl_opts = {'format': 'bestaudio'}
-    FFMPEG_OPTIONS = {'before_options': '-reconnect 1 -reconnect_streamed 1 -reconnect_delay_max 5', 'options': '-vn'}
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-        info = ydl.extract_info(url, download=False)
-        URL = info['formats'][0]['url']
-    voice = bot.voice_clients[0]
-    voice.play(discord.FFmpegPCMAudio(URL, **FFMPEG_OPTIONS))
-
-@client.command()
-async def 나가(ctx):
-    await bot.voice_clients[0].disconnect()
-  
-@client.command()
-async def 멈춰(ctx):
-    if not bot.voice_clients[0].is_paused():
-        bot.voice_clients[0].pause()
-    else:
-        await ctx.send("already paused")
-
-@client.command()
-async def 다시재생(ctx):
-    if bot.voice_clients[0].is_paused():
-        bot.voice_clients[0].resume()
-    else:
-        await ctx.send("already playing")
-        
-@client.command()
-async def 멈춰(ctx):
-	if bot.voice_clients[0].is_playing():
-    	bot.voice_clients[0].stop()
-    else:
-    	await ctx.send("not playing")
     
 @client.command()
 async def 안녕(ctx):
@@ -57,7 +16,7 @@ async def 도움말(ctx) :
    
    embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
    embed.add_field(name="지도", value="티바트 모든 맵을 볼 수 있습니다.", inline=True)
-   embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=True)
+   embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=False)
    embed.add_field(name="무기", value="원신에 나오는 모든 무기를 찾아볼 수 있습니다.", inline=True)
    
    embed.add_field(name="롤패치노트", value="롤 패치노트를 볼 수 있습니다.", inline=False)
