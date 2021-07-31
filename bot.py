@@ -11,7 +11,7 @@ async def 안녕(ctx):
 @client.command()
 async def 도움말(ctx) :
     embed = discord.Embed(title = "도움말",
-    description = "리월칠성 청이 사용하는 방법입니다.\n\n**청아 안녕**\n청이랑 인사할 수 있습니다.\n\n**청아 원신**\원신 공식 유튜브입니다.\n\n**청아 지도**\n티바트 지역 전체 맵을 볼 수 있습니다.", color = 0x62c1cc)
+    description = "리월칠성 청이 사용하는 방법입니다.\n\n**청아 안녕**\n청이랑 인사할 수 있습니다.\n\n**청아 원신**\n원신 공식 유튜브입니다.\n\n**청아 지도**\n티바트 지역 전체 맵을 볼 수 있습니다.\n\n**청아 롤패치노트**\n롤 패치노트를 볼 수 있습니다.", color = 0x62c1cc)
     embed.add_field(name = "필드(Field)의 Name", value = "필드(Field)의 Value")
     embed.set_footer(text = f"{ctx.message.author.name}", icon_url = ctx.message.author.avatar_url)
     await ctx.send(embed = embed)
