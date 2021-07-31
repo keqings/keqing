@@ -16,9 +16,9 @@ async def 도움말(ctx) :
    
    embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
    embed.add_field(name="지도", value="티바트 모든 맵을 볼 수 있습니다.", inline=True)
-   embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=False)
+   embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=True)
    embed.add_field(name="무기", value="원신에 나오는 모든 무기를 찾아볼 수 있습니다.", inline=True)
-   embed.add_field(name="롤패치노트", value="롤 패치노트를 볼 수 있습니다.", inline=False)
+   embed.add_field(name="롤패치노트", value="롤 패치노트를 볼 수 있습니다.", inline=True)
    embed.add_field(name="오피지지", value="롤 전적검색 사이트로 갑니다!", inline=True)
    embed.add_field(name="유튜브", value="유튜브로 바로 갑니다!", inline=True)
    
