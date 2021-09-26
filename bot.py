@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import os
 
-client = commands.Bot(command_prefix = '청아 ')
+client = commands.Bot(command_prefix = '=')
     
 @client.command()
 async def 안녕(ctx):
@@ -10,7 +10,7 @@ async def 안녕(ctx):
 
 @client.command()
 async def 도움말(ctx) :
-   embed=discord.Embed(title="도움말", description="리월칠성 청이 사용법입니다. 청아 뒤에 입력해주세요.", color=0x0055ff)
+   embed=discord.Embed(title="도움말", description="리월칠성 청이 사용법입니다. =뒤에 입력해주세요.", color=0x0055ff)
    embed.set_author(name="각청", icon_url="https://pbs.twimg.com/profile_images/1325830385326907394/qBBNn2Zd_400x400.jpg")
    embed.add_field(name="안녕", value="청이랑 인사할 수 있습니다.", inline=False)
    
