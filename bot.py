@@ -31,7 +31,7 @@ async def 원신(ctx):
 
 @client.command()
 async def 지도(ctx):
-    await ctx.send('https://webstatic-sea.mihoyo.com/app/ys-map-sea/index.html?lang=ko-kr#/map/2?shown_types=5,194&center=82.00,-1169.00&zoom=-2.00')
+    await ctx.send('https://genshin.gamedot.org/?mid=genshinmaps')
 
 @client.command()
 async def 캐릭터(ctx):
