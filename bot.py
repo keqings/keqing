@@ -9,8 +9,8 @@ async def 안녕(ctx):
     await ctx.send('안녕 여행자')
 
 @client.command()
-async def help(ctx) :
-   embed=discord.Embed(title="help", description="각청봇 사용법입니다. ``뒤에 입력해주세요.", color=0x0055ff)
+async def 도움말(ctx) :
+   embed=discord.Embed(title="", description="각청봇 사용법입니다. ``뒤에 입력해주세요.", color=0x0055ff)
    embed.set_author(name="각청", icon_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNEjDKeoxaWAzlXKR6ODD2YzUSrA-rwY_Cjg&usqp=CAU")
    embed.add_field(name="안녕", value="각청과 인사할 수 있습니다.", inline=False)
    
@@ -64,7 +64,7 @@ async def on_ready():
   # [discord.Status.online = 온라인],[discord.Status.idle = 자리비움],[discord.Status.dnd = 다른용무],[discord.Status.offline = 오프라인]
   await client.change_presence(status=discord.Status.online)
 
-  await client.change_presence(activity=discord.Game(name="업무중/``help))
+  await client.change_presence(activity=discord.Game(name="업무중/``도움말))
   #await client.change_presence(activity=discord.Streaming(name="스트림 방송중", url='링크'))
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name="노래 듣는중"))
   #await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="영상 시청중"))
