@@ -19,9 +19,8 @@ async def 도움말(ctx) :
    embed.add_field(name="캐릭터", value="플레이어블 캐릭터들을 볼 수 있습니다.", inline=True)
    embed.add_field(name="무기", value="원신에 나오는 모든 무기를 찾아볼 수 있습니다.", inline=True)
    embed.add_field(name="롤패치", value="롤 패치노트를 볼 수 있습니다.", inline=True)
-   embed.add_field(name="", value="롤 전적검색 사이트로 갑니다!", inline=True)
+   embed.add_field(name="전적", value="롤 전적검색 사이트로 갑니다!", inline=True)
    embed.add_field(name="에펙패치", value="에이펙스 패치노트를 볼 수 있습니다.", inline=True)
-   embed.add_field(name="유튜브", value="유튜브로 바로 갑니다!", inline=True)
    
    embed.set_footer(text="추가하고 싶은 내용을 말해주세요.")
    await ctx.send(embed=embed)
@@ -51,11 +50,7 @@ async def 에펙패치(ctx):
     await ctx.send('https://www.ea.com/ko-kr/games/apex-legends/news#game-updates')  
 
 @client.command()
-async def 유튜브(ctx):
-    await ctx.send('https://www.youtube.com/')
-
-@client.command()
-async def (ctx):
+async def 전적 (ctx):
     await ctx.send('https://www.op.gg/l=ko_KR')
     
 @client.event
