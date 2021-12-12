@@ -12,7 +12,7 @@ async def 안녕(ctx):
 async def 도움말(ctx) :
    embed=discord.Embed(title="", description="각청봇 사용법입니다. ;뒤에 입력해주세요.", color=0x0055ff)
    embed.set_author(name="각청", icon_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNEjDKeoxaWAzlXKR6ODD2YzUSrA-rwY_Cjg&usqp=CAU")
-   embed.add_field(name="안녕", value="각청과 인사할 수 있습니다.", inline=False)
+   embed.add_field(name="안녕", value="각청과 인사할 수 있습니다.", inline=True)
    
    embed.add_field(name="원신", value="원신에 관한 모든 것!", inline=True)
    embed.add_field(name="지도", value="티바트 모든 맵을 볼 수 있습니다.", inline=True)
